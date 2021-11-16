@@ -1,0 +1,485 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Century Gothic';
+}
+:root{
+    --black: #000;
+    --white: #fff;
+    --main: #FFB301;
+    --yellowish: #FFD501;
+    --mainish:#E29E00;
+    --blackish: #707070;
+    --offwhite: #ECECEC;
+    --red: #FE0606;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+}
+.header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header ul li{
+    font-size: clamp(.4rem, 3vw, 1rem);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_logo{
+    width: 30vw;
+}
+.navbar_logo img{
+    width: 30vw;
+}
+.navbar_menu{
+    display: flex;
+}
+.navbar_link{
+    color: var(--black);
+    margin: 20px;
+    font-size: 1rem;
+}
+.navbar_menu li{
+    list-style: none;
+}
+@media screen and (min-width: 800px){
+    .header{
+        float: right;
+    }
+    .menu, .socials{
+        display: flex;
+    }
+}
+.hero{
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)),
+     url(/assets/images/girls.jpg);
+     background-position: center;
+     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+.logo{
+    margin-top: -25px;
+}
+.slogan{
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(.4rem);
+    color: var(--black);
+    padding: 10px;
+}
+.cards{
+    padding: 50px 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.image, .image img{
+    width: 70vw;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+.text .button{
+    background: var(--main);
+    border: none;
+}
+.button h1{
+    padding: 5px 30px;
+}
+.button a{
+    color: var(--blackish);
+}
+.heading{
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: var(--black);
+}
+.title{
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 0 50px;
+    background: var(--main);
+    color: var(--black);
+    margin: 50px 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px){
+    .cards{
+        padding: 50px 50px;
+    }
+    .card{
+        flex-direction: row;
+        margin: 20px 20px;
+    }
+    .text,
+    .image, .image img{
+        width: 40vw;
+    }
+}
+.cta{
+    background: linear-gradient(to right, rgba(256,158,0,0.8), rgba(256,158,0,0.5), rgba(256,158,0,0.8)),
+    url(/assets/images/boys.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    margin: 50px 0;
+    height:100%;
+}
+.cta_title{
+    margin-bottom: 100px;
+}
+.cta_wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.cta_wrapper h1{
+    padding:20px 30px;
+    background: var(--black);
+    margin: 5px;
+}
+.cta_wrapper h1 a{
+    color: var(--white);
+}
+.events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+.event_card{
+    width: 80vw;
+    text-align: center;
+    margin:50px 0;
+}
+.event_image, .event_image img{
+    width: 80vw;
+}
+.info{
+    padding: 20px;
+}
+@media screen and (min-width: 800px){
+    .event_wrapper{
+        display: flex;
+        padding: 50px 50px;
+    }
+    .event_card,
+    .event_image, .event_image img{
+        width: 30vw;
+    }
+    .event_card{
+        margin: 0 20px;
+    }
+}
+.tiles{
+    background: var(--black);
+    padding: 10px;
+}
+.tile_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tile_wrapper > *{
+    flex: 1 1 30%;
+}
+.tile{
+    background: var(--mainish);
+    text-align: center;
+    margin: 1px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.fee, .prospectus, .facility{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fee{
+    background: url(/assets/images/girl1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.facility{
+    background: url(/assets/images/lab.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.prospectus{
+    background: url(/assets/images/board.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fee h1, .prospectus h1, .facility h1 a{
+    padding:20px 30px;
+    background: var(--main);
+    color: var(--black);
+}
+@media screen and (min-width: 800px){
+    .links{
+        flex-direction: row;
+    }
+    .fee, .prospectus, .facility{
+        width: 33vw;
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 100px 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.contact_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--offwhite);
+    padding: 50px 10px;
+    width: 80vw;
+}
+.name, .emailaddress, .phone, .message, .details, .location, .viewdate, .property_type, .class{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 10px;
+}
+.property_type select{
+    padding: 10px;
+}
+.contact_form label{
+    padding: 10px 0;
+}
+.contact_form input{
+    padding: 10px;
+}
+.buttn{
+    background: var(--main);
+    border: none;
+    color: var(--white);
+    width: 30vw;
+    margin: 20px;
+}
+.contact_info{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 800px){
+    .contact_card{
+        flex-direction: row;
+    }
+    .contact_form{
+        width: 50vw;
+    }
+    .name, .emailaddress, .phone, .message, .details, .location, .viewdate, .property_type, .class{
+        width: 40vw;
+    }
+    .buttn{
+        width: 10vw;
+    }
+    .contact_info{
+        margin: 0 50px;
+    }
+}
+.facilities, .curicullum, .about, .history, .principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facilities_wrapper, .curicullum_wrapper, .history_wrapper, .about_wrapper, .principal_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facilities_card, .curicullum_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facilities_image,.facilities_image img, .curicullum_image, .curicullum_image img,
+ .about_image, .about_image img, .history_image, .history_image img, .principal_image, .principal_image img{
+    width: 80vw;
+}
+.facilities_text, .curicullum_text, .about_text, .history_text, .principal_text{
+    width: 80vw;
+    text-align: center;
+    margin: 0 50px;
+}
+.sign{
+    font-size: clamp(.8rem, 3vw, 1.2rem);
+    color: var(--blackish);
+    float: right;
+    margin-right: 50px !important;
+    text-align: center;
+}
+.signature{
+    font-family: 'mistral';
+}
+@media screen and (min-width: 800px){
+    .facilities_card, .curicullum_card,.history_wrapper, .about_wrapper, .principal_wrapper{
+        flex-direction: row;
+        margin: 20px 0;
+        justify-content: space-evenly;
+    }
+    #two{
+        order: -1;
+    }
+    .facilities_image,.facilities_image img, .curicullum_image, .curicullum_image img, .about_image, 
+    .about_image img, .history_image, .history_image img, .principal_image, .principal_image img{
+        width: 40vw;
+    }
+    .facilities_text, .curicullum_text, .about_text, .history_text, .principal_text{
+        width: 40vw;
+        text-align: center;
+    }
+}
+
+.footer{
+    background: linear-gradient(to right, rgba(256,158,0,0.8), rgba(256,158,0,0.5), rgba(256,158,0,0.8)),
+     url(/assets/images/boys.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+}
+.footer_wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    padding: 50px 0;
+}
+.footer_details,
+.usefullinks a,
+.socialmedia a{
+    font-size:clamp(.6rem, 3vw, 1rem);
+    color: var(--offwhite);
+}
+.usefullinks ul,
+.socialmedia ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer_details h2,
+.usefullinks h2,
+.socialmedia h2,
+.newsletter h2{
+    color: var(--white);
+}
+.socialmedia a{
+    cursor: pointer;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.email, .submit{
+    border: none; 
+}
+.email{
+    padding: 10px;
+    width: 60vw;
+}
+.submit{
+    background: var(--black);
+    color: var(--white);
+    padding: 10px 30px;
+    margin: 20px 0;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--white);
+    width: 100vw;
+    padding: 10px 0;
+}
+@media screen and (max-width: 350px){
+    .footer_image, .footer_image img{
+        width: 60vw;
+    }
+}
+@media screen and (min-width: 800px){
+    .footer-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_info{
+        display: flex;
+        flex-direction: column;
+        margin: 0 50px;
+    }
+    .email{
+        padding: 10px 50px;
+        width: 10vw;
+    }
+    .socialmedia ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
